@@ -61,8 +61,8 @@ public class Operators {
 
         // Shift Operators
         System.out.println("\nShift Operators:");
-        System.out.println("p << 1: "+(p<<1));
-        System.out.println("p >> 1: "+(p>>1));
+        System.out.println("p << 1: "+(p<<1));  // 'p=p*2'
+        System.out.println("p >> 1: "+(p>>1));  // 'p=p/2'
         System.out.println("p >>> 1 "+(p>>>1));
 
         // Ternary Operator
