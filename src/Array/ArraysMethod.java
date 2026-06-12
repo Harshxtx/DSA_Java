@@ -69,8 +69,7 @@ public class ArraysMethod {
                     {1, 2},
                     {3, 4}
             };
-            System.out.println("2D Array: "
-                    + Arrays.deepToString(matrix));
+            System.out.println("2D Array: " + Arrays.deepToString(matrix));
 
             // 15. deepEquals()
             int[][] matrix2 = {
