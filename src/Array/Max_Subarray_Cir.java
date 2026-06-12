@@ -34,13 +34,7 @@ public class Max_Subarray_Cir {
 //        for (int i = 0; i < numbers.length; i++) {
 //            arr[i]=in.nextInt();
 
-        System.out.println("Array elements:");
-        for (int i = 0; i < arr.length; i++) {
-            if(i>0)
-                System.out.print(", ");
-            System.out.print(arr[i]);
-        }
-        System.out.println();
+        System.out.println("Array elements:"+Arrays.toString(arr));
 
         int sum=ob.KadansCir(arr);
         System.out.println("Maximum Sum in a Circular Array: "+sum);
