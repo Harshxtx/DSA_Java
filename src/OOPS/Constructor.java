@@ -12,7 +12,7 @@ class Student {
         grade=c;
         section=s;
     }
-    Student(){                                  //constructor overloa
+    Student(){                                  //constructor overloading
         name="Hacker";
         roll_no=Integer.MAX_VALUE;
         grade=67;
