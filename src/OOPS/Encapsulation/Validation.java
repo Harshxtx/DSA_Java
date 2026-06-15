@@ -1,4 +1,5 @@
-package OOPS;
+package OOPS.Encapsulation;
+
 
 class Marks {
     private int marks;

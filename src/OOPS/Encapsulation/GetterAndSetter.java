@@ -1,4 +1,5 @@
-package OOPS;
+package OOPS.Encapsulation;
+
 
 class Info {
     private String name;
@@ -34,6 +35,7 @@ public class GetterAndSetter {
         s1.setName("Harshit");
         s1.setCourse("B.Tech");
         s1.setBranch("CSE");
+
         System.out.println("Name: "+s1.getName());
         System.out.println("Course: "+s1.getCourse());
         System.out.println("Branch: "+s1.getBranch());
