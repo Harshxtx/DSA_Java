@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Wrapper_Class;
 
 class Wrapper_Comparison {
     public static void main(String[] args) {
