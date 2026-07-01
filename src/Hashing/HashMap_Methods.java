@@ -43,10 +43,16 @@ public class HashMap_Methods {
             System.out.println(key+" -> "+map.get(key));
         }
 
+        // Traversing using value()        //will only give values       // O(n)
+        System.out.println("\nTraversal using value():");
+        for(String name : map.values()) {
+            System.out.println(name+" -> "+map.get(name));
+        }
+
         // Traversing using entrySet()       //will give key and value both // O(n)
         System.out.println("\nTraversal using entrySet():");
         for(Map.Entry<Integer, String> e : map.entrySet()) {
-            System.out.println(e.getKey()+" -> "+e.getValue());
+            System.out.println(e.getKey());
         }
 
         // getOrDefault()
