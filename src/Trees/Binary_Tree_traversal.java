@@ -72,7 +72,7 @@ public class Binary_Tree_traversal {
         Scanner in = new Scanner(System.in);
         Binary_Tree_traversal tree = new Binary_Tree_traversal();
         tree.createTree();
-        System.out.print("Post Order Traversal: ");
+        System.out.print("Pre Order Traversal: ");
         tree.preOrder(tree.root);
         System.out.print("\nIn Order Traversal: ");
         tree.inOrder(tree.root);
