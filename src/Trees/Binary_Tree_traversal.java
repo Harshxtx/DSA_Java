@@ -1,5 +1,12 @@
 package Trees;
-
+// Binary Tree Traversals (Depth First Search)
+//
+// 1. Preorder  : Root -> Left -> Right
+// 2. Inorder   : Left -> Root -> Right
+// 3. Postorder : Left -> Right -> Root
+//
+// Time Complexity : O(n)
+// Space Complexity : O(h)
 import java.util.*;
 
 public class Binary_Tree_traversal {
