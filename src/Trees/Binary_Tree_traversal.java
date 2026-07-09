@@ -60,10 +60,7 @@ public class Binary_Tree_traversal {
         System.out.print(root.data+" ");
     }
 
-    //display Tree(Level order)
-    void levelOrder(Node root) {
 
-    }
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         Binary_Tree_traversal tree = new Binary_Tree_traversal();
