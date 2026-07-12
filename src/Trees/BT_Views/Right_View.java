@@ -57,6 +57,6 @@ public class Right_View {
         Right_View tree = new Right_View();
         tree.createTree();
         List<Integer> list=tree.rightSideView(tree.root);
-        System.out.println("Right View of Binary Tree"+list);
+        System.out.println("Right View of Binary Tree: "+list);
     }
 }
