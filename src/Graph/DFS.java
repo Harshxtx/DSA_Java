@@ -60,17 +60,29 @@ public class DFS {
     }
     void dfs(List<List<Integer>> adj){
         boolean[] visited=new boolean[adj.size()];
-        dfsRec(adj,visited,0);
+        for (int i=0;i<adj.size();i++) {
+            if(!visited[i]){
+                System.out.print("Component: ");
+                dfsRec(adj, visited, i);
+                System.out.println();
+            }
+        }
     }
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         DFS ob = new DFS();
-        int vertices=4;
-        int edges[][]={{0,1},{0,2},{1,2},{1,3}};                // Undirected Unweighted Graph
+        //int vertices=5;
+        int vertices=10;
+        //int edges[][]={{0,1},{0,2},{0,3},{1,4},{1,5}};                 // Undirected Unweighted Graph
+        int[][] edges = {
+                {0, 1}, {1, 2}, {2, 0},  // Component 1 (Triangle: 0-1-2)
+                {4, 5},                  // Component 2 (Line: 4-5)
+                {7, 8}, {8, 9}           // Component 3 (Line: 7-8-9)
+        };
         List<List<Integer>> adjList=ob.createGraphList(edges, vertices);
         System.out.println("Adjacency List: ");
         ob.displayList(adjList, vertices);
-        System.out.print("DFS Traversal of graph: ");
+        System.out.println("DFS Traversal of graph: ");
         ob.dfs(adjList);
     }
 }
