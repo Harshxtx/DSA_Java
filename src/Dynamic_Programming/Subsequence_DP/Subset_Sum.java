@@ -42,25 +42,22 @@ public class Subset_Sum {
     // 3.Tabulation
     boolean isSubsetSum(int arr[], int sum) {
         int n=arr.length;
-        int dp[][]=new int[n][sum+1];
-        for(int a[]:dp){
-            Arrays.fill(a,-1);
-        }
+        boolean dp[][]=new boolean[n][sum+1];
         for(int i=0;i<n;i++){
-            dp[i][0]=1;
+            dp[i][0]=true;
         }
         if(arr[0]<=sum)
-            dp[0][arr[0]]=1;
+            dp[0][arr[0]]=true;
         for(int i=1;i<n;i++){
             for(int target=1;target<=sum;target++){
                 boolean take=false;
                 if(arr[i]<=target)
-                    take=dp[i-1][target-arr[i]]==1;
-                boolean notTake=dp[i-1][target]==1;
-                dp[i][target]=take||notTake?1:0;
+                    take=dp[i-1][target-arr[i]];
+                boolean notTake=dp[i-1][target];
+                dp[i][target]=take||notTake;
             }
         }
-        return dp[n-1][sum]==1?true:false;
+        return dp[n-1][sum];
     }
 
     // 2nd part: No. of Subsets presents
@@ -76,11 +73,11 @@ public class Subset_Sum {
 //
 //        return dp[idx][target]=take+notTake;
 //    }
-//    public int numSubset(int[] nums, int target) {
+//    int numSubset(int[] nums, int target) {
 //        int n=nums.length;
 //        int dp[][]=new int[n][target+1];
 //        for(int a[]:dp){
-//            Arrays.fill(dp,-1);
+//            Arrays.fill(a,-1);
 //        }
 //        return solve(n-1,nums,target,dp);
 //    }
