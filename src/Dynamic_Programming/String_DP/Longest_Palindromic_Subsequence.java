@@ -2,7 +2,7 @@ package Dynamic_Programming.String_DP;
 
 import java.util.*;
 
-public class Longest_Palindromic_Substring {
+public class Longest_Palindromic_Subsequence {
     // 1.Memoization
 //    int solve(int idx1,int idx2,String word1,String word2,int dp[][]){
 //        if(idx1<0 || idx2>=word2.length()) return 0;
@@ -41,9 +41,9 @@ public class Longest_Palindromic_Substring {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        Longest_Palindromic_Substring ob = new Longest_Palindromic_Substring();
+        Longest_Palindromic_Subsequence ob = new Longest_Palindromic_Subsequence();
         String str="bbabab";
         int res=ob.longestPalindromeSubseq(str);
-        System.out.println("Longest Palindromic Substring"+res);
+        System.out.println("Longest Palindromic Subsequence"+res);
     }
 }
